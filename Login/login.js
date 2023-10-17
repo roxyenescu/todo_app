@@ -18,6 +18,7 @@ export function login(e) {
             document.getElementById('login').setAttribute('hidden', 'true')
             document.getElementById('register').setAttribute('hidden', 'true')
             document.getElementById('user').removeAttribute('hidden')
+            document.getElementById('greetings').textContent = 'Salut ' + user[0].name
         }
     } else
     {
