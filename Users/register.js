@@ -13,17 +13,14 @@ export function register(e) {
         let password = document.getElementById('registerPassword').value
         let newId = users[users.length-1].id + 1
 
-
         let newUser = {
             id: newId,
             name: username,
             email: registerEmail,
             password: password
-
         }
 
         users.push(newUser)
-
         console.log(users)
     }
 }

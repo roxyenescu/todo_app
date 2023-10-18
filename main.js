@@ -1,8 +1,8 @@
-import { login } from './Login/login.js'
-import { logout } from './Login/logout.js'
+import { register } from './Users/register.js'
+import { login } from './Users/login.js'
+import { logout } from './Users/logout.js'
 import { renderTodos } from './Todos/renderTodos.js'
 import { addToDo } from './Todos/add.js'
-import { register } from './Login/register.js'
 
 const loginButton = document.getElementById("loginSubmit")
 loginButton.addEventListener('click', login)
