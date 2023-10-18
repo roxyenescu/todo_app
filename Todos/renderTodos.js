@@ -37,6 +37,15 @@ export function renderTodos() {
     
         const todoList = document.getElementById('toDos')
         todoList.appendChild(todoDiv)
+
+        const isLoggedIn = localStorage.getItem("isLoggedIn")
+
+        if (isLoggedIn) {
+            let taskButtons = document.querySelectorAll('.taskButtons')
+            taskButtons.forEach(element => {
+                element.style.display = 'block'
+            });
+        }
     
     })
 }

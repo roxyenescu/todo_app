@@ -4,6 +4,10 @@ body * {
     margin: 0 10px 10px 0;
 }
 
+section {
+    margin: 0 20px 50px 20px;
+}
+
 #login {
     float: left;
 }

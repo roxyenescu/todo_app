@@ -21,13 +21,6 @@ if (isLoggedIn) {
 
 renderTodos()
 
-if (isLoggedIn) {
-    let taskButtons = document.querySelectorAll('.taskButtons')
-    taskButtons.forEach(element => {
-        element.style.display = 'block'
-    });
-}
-
 const logoutButton = document.getElementById("logout")
 logoutButton.addEventListener('click', logout)
 
