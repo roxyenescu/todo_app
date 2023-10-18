@@ -38,6 +38,7 @@ button {
 }
 
 .taskButtons {
+    display: none;
     height: 2rem;
     font-size: 0.5rem;
 }
