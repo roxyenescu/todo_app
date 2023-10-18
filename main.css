@@ -17,7 +17,7 @@ button {
     font-weight: bold;
 }
 
-.taskName {
+.taskName, .taskResponsible {
     display: inline;
     width: 400px;
     font-weight: bold;

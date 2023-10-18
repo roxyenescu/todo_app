@@ -1,11 +1,19 @@
 import { toDos } from '../Database/todos.js'
-import { renderTodos } from './renderTodos.js'
 
 export function deleteToDo(e) {
     e.preventDefault()
-    console.log('vrei sa stergi un task')
-    
-    console.log(e.target.parentElement.id)
+    let idToDelete = e.target.parentElement.id
+    console.log('vrei sa stergi un task cu ID-ul: ', idToDelete)
 
-    renderTodos()
+    const todoToDelete = document.getElementById(idToDelete)
+
+    console.log(todoToDelete)
+    todoToDelete.outerHTML = ''
+
+    // toDos = [...toDos.filter(todo => todo.id != idToDelete)]
+    
+    const elementToRemove = toDos.find(element => element.id == idToDelete);
+    toDos.splice(toDos.indexOf(elementToRemove), 1);
+
+    console.log('Lista de to-dos dupa stergere: ', toDos)
 }

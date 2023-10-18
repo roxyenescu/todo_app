@@ -10,6 +10,11 @@ export function renderTodos() {
         todoTask.textContent = todo.taskName
         todoTask.classList.add('taskName')
         todoDiv.appendChild(todoTask)
+
+        const todoReaponsible = document.createElement ('div')
+        todoReaponsible.textContent = todo.responsible
+        todoReaponsible.classList.add('taskResponsible')
+        todoDiv.appendChild(todoReaponsible)
     
         const todoStatus = document.createElement ('div')
         todoStatus.textContent = todo.status
