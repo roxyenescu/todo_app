@@ -9,7 +9,7 @@ export function addToDo(e) {
     newToDo.id = newID
     newToDo.taskName = document.getElementById('addEditTaskName').value
     newToDo.status = document.getElementById('addEditTaskStatus').value
-    newToDo.status = document.getElementById('addEditResponsible').value
+    newToDo.responsible = document.getElementById('addEditResponsible').value
 
     toDos.push(newToDo)
 

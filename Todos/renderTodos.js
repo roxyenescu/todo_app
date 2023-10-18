@@ -1,5 +1,6 @@
 import { toDos } from '../Database/todos.js'
 import { deleteToDo } from './delete.js'
+import { editToDo } from './edit.js'
 
 export function renderTodos() {
     document.getElementById('toDos').innerHTML = "<h1>My To-Dos</h1>"
@@ -25,8 +26,13 @@ export function renderTodos() {
         todoDeleteButton.textContent = "DELETE"
         todoDeleteButton.classList.add('taskButtons')
         todoDeleteButton.addEventListener('click', deleteToDo)
-
         todoDiv.appendChild(todoDeleteButton)
+
+        const todoEditButton = document.createElement('button')
+        todoEditButton.textContent = "EDIT"
+        todoEditButton.classList.add('taskButtons')
+        todoEditButton.addEventListener('click', editToDo)
+        todoDiv.appendChild(todoEditButton)
     
         const todoList = document.getElementById('toDos')
         todoList.appendChild(todoDiv)

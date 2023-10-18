@@ -25,4 +25,4 @@ let toDos = [
     },
 ]
 
-export { toDos}
+export { toDos }
