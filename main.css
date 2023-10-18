@@ -1,15 +1,21 @@
 body * {
     box-sizing: border-box;
     font-family: sans-serif;
-    margin: 0 10px 10px 0;
+    margin: 10px;
 }
 
 section {
     margin: 0 20px 50px 20px;
 }
 
-#login {
-    float: left;
+form {
+    margin: 0;
+}
+
+#loginRegisterwrapper {
+    margin: 0;
+    display: flex;
+    align-items: flex-start;
 }
 
 button, input, select {
@@ -27,6 +33,10 @@ button {
 
 #toDos {
     max-width: 1280px;
+}
+
+#toDos > div:nth-child(even) {
+    background-color: aliceblue;
 }
 
 .toDo {
