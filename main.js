@@ -2,9 +2,13 @@ import { login } from './Login/login.js'
 import { logout } from './Login/logout.js'
 import { renderTodos } from './Todos/renderTodos.js'
 import { addToDo } from './Todos/add.js'
+import { register } from './Login/register.js'
 
 const loginButton = document.getElementById("loginSubmit")
 loginButton.addEventListener('click', login)
+
+const registerButton = document.getElementById("registerSubmit")
+registerButton.addEventListener('click', register)
 
 const isLoggedIn = localStorage.getItem("isLoggedIn")
 
