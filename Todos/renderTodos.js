@@ -7,6 +7,7 @@ export function renderTodos() {
     toDos.forEach((todo)=> {
         const todoDiv = document.createElement('div')
         todoDiv.id = todo.id
+        todoDiv.classList.add('toDo')
         const todoTask = document.createElement ('div')
         todoTask.textContent = todo.taskName
         todoTask.classList.add('taskName')
